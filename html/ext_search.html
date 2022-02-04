@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search">
+        <a href="img_search.html"><input type="submit" value="Пошук зображень"></a>
+        <a href="index.html"><input type="submit" value="Пошук Google"></a>
+    </div>
+    <div style="color: coral; font-size: 28px; padding-bottom: 24px;">
+        Розширений пошук
+    </div>
+    <hr>
+    <div class="title_search">
+        Знайти сторінки, що містять...
+    </div>
+    <form class="extended" action="https://google.com/search">
+        <table class="table">
+            <tr>    
+                <td class="description">усі ці слова:</td>               
+                <td class="find"><input type="text" name="as_q"></td>
+            </tr>
+            <tr>    
+                <td class="description">точне слово або фразу:</td>               
+                <td class="find"><input type="text" name="as_epq" value=""></td>
+            </tr>
+            <tr>    
+                <td class="description">будь-яке з цих слів:</td>               
+                <td class="find"><input type="text" name="as_oq" value=""></td>
+            </tr>
+            <tr>    
+                <td class="description">жодне з цих слів:</td>               
+                <td class="find"><input type="text" name="as_eq" value=""></td>
+            </tr>
+            <tr>
+                <td class="submited" colspan="2"><input type="submit" value="шукати"></td>
+            </tr>
+        </table> 
+    </form>
+</body>
+</html>
